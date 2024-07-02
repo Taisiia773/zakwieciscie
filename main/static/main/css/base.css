@@ -1,0 +1,88 @@
+:root {
+    --font: "Montserrat";
+    --main-color: #1A1110;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+footer {
+    border-top: solid 0.5px rgba(255, 255, 255, 0.288);
+    margin-top: 50px;
+}
+
+.nav-href {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 0 0 0 0;
+}
+
+.modal.fade.modal-right .modal-dialog {
+    transform: translate(125%, 0px);
+}
+  
+.modal.show.modal-right .modal-dialog {
+    transform: none;
+}
+
+
+
+.navbar-nav {
+    margin-left: 10px;
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+#logo {
+    width: 150px;
+    height: 90px;
+}
+
+#main-wrapper, #header-content {
+    width: 1200px;
+}
+
+.auth-div {
+    border: 1px solid white;
+    border-radius: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(255, 255, 255, 0.101);
+    gap: 2px;
+}
+
+.auth-div p {
+    margin: 3px;
+    color: white;
+}
+
+.bi {
+    font-size: 1.4rem;
+    color: pink;
+}
+
+.auth-div .icon {
+    margin-left: 5px;
+    margin-right: 0px;
+}
+
+#user-zone {
+    gap: 30px;
+}
+
+#icons-block {
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+}

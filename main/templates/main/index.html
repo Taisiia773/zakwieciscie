@@ -1,0 +1,49 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'main/css/index.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="content">
+        <div class="row d-flex align-items-center">
+            <div class="col-8">
+                <div class="text-start top-50">
+                    <h2 class="text-white fw-bold">Buy our flowers </h2>
+                    <h2 class="text-white fw-bold">Give us your money</h2>
+                    <p class="text-white-50">Flower Shop in Ostrów Wielkopolski is a place where the love of nature meets the passion to create. Our flower shop was created from the need of the heart and love of beauty. We offer fresh cut and potted flowers, we compose occasional bouquets, we create flowerboxes, forests in glass and vertical gardens. We enjoy wedding and communion floristry and decorating of halls, churches and cars.</p>
+                </div>
+                
+                <a href="{% url 'flowers_catalog' %}">
+                    <button id="catalog-btn">Explore our flowers</button>
+                </a>
+            </div>
+            <div class="col-4 text-center">
+                <p><img class="img-rounder float-end w-100" src="{% static 'main/img/flowers.png' %}" alt="flowers"></p>
+            </div>
+        </div>
+
+        <div class="range">
+            <h2 class="text-white">Browse the range</h2>
+            <p class="text-white-50">Lorem Ipsum has been the industry's.</p>
+            <div class="row d-flex justify-content-between text-white">
+                <div class="col-4 text-center ">
+                    <img class="rounded w-75" id="img1" src="{% static 'main/img/img1.png' %}" alt="">
+                    <hr>
+                    <p>Flowers</p>
+                </div>
+                <div class="col-4 text-center">
+                    <img class="rounded w-75" id="img1" src="{% static 'main/img/img2.png' %}" alt="">
+                    <hr>
+                    <p>Flowers</p>
+                </div>
+                <div class="col-4 text-center">
+                    <img class="rounded w-75" id="img1" src="{% static 'main/img/img3.png' %}" alt="">
+                    <hr>
+                    <p>Flowers</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

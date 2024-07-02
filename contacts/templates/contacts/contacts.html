@@ -1,0 +1,30 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'contacts/css/contacts.css' %}">
+{% endblock %}
+
+{% block content %}
+<!-- <img class="w-100" id="flowers-catalog-banner" src="{% static 'contacts/img/banner.png' %}" alt="Flowers catalog banner"> -->
+
+    <div class="d-flex flex-row align-items-center">
+        <p><img class="info-icon" src="{% static 'contacts/img/phone.png' %}" alt="contactspage"></p>
+        <h6 class="contact-title">Phone number: </h6>
+        <p class="text-white contact-info">+48 733 160 170</p>
+    </div>
+
+    <div class="d-flex flex-row align-items-center">
+        <p><img class="info-icon" src="{% static 'contacts/img/email.png' %}" alt="contactspage"></p>
+        <h6 class="contact-title">Email: </h6>
+        <p class="text-white contact-info">zakwieciscie@wp.pl</p>
+    </div>
+
+    <div class="d-flex flex-row align-items-center">
+        <p><img class="info-icon" src="{% static 'contacts/img/location.png' %}" alt="contactspage"></p>
+        <h6 class="contact-title">Location: </h6>
+        <p class="text-white contact-info">ul. Ceglana 2a (przy ulicy Zębcowskiej) 63-400 Ostrów Wielkopolski Woj. wielkopolskie</p>
+    </div>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2476.236439290006!2d17.7979166!3d51.6371949!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ab58fb834b5a3%3A0xea422210b3c1106b!2sKwiaciarnia%20Zakwieci%C5%9Bcie!5e0!3m2!1spl!2spl!4v1718623134148!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+{% endblock %}

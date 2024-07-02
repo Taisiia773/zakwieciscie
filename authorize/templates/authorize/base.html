@@ -1,0 +1,29 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'authorize/css/base.css' %}">
+{% endblock %}
+
+{% block content %}
+    <form method="POST" class="d-flex align-items-center flex-column h-auto text-center">
+        {% csrf_token %}
+        
+        <div id="auth-block" class="mb-3">
+            {% block title %}
+            {% endblock %}
+        </div>
+
+        <div id="inputs" class="d-flex flex-column w-100">
+            {% block inputs %}
+            {% endblock %}
+        </div>
+        
+        {% if error %}
+            <p id="error-text">
+                {{error}}
+            </p>
+        {% endif %}
+        
+    </form>
+{% endblock %}

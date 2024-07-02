@@ -1,0 +1,8 @@
+db.sqlite3
+*.DS_Store
+# contacts/static/contacts/img/.DS_Store
+# contacts/.DS_Store
+# contacts/static/.DS_Store
+# contacts/static/contacts/.DS_Store
+media
+*.pyc

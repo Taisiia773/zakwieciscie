@@ -1,0 +1,27 @@
+  
+table {
+    margin-top: 20px;
+}
+
+.cart-image {
+    width: 100px;
+    height: auto;
+}
+
+.text-right {
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#tablecol{
+    background-color: aqua;
+}

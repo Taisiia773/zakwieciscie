@@ -1,0 +1,24 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block head %}
+  <link rel="stylesheet" href="{% static 'catalog/css/item.css' %}">
+{% endblock %}
+
+{% block content %}
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="{{flower.img.url}}" class="img-fluid" alt="Flower Image">
+      </div>
+      <div class="col-md-6">
+        <h1>Beautiful Rose</h1>
+        <p class="price">{{flower.price}} zl</p>
+        <p class="description">
+          {{flower.description}}
+        </p>
+        <button class="action-btn">Add to cart<i class="bi bi-cart2"></i></button>
+      </div>
+    </div>
+  </div>
+{% endblock %}

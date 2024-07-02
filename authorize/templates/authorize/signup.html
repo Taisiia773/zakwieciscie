@@ -1,0 +1,17 @@
+{% extends 'authorize/base.html' %}
+
+
+{% block title %}
+<p class="info-text" style="font-size: 32px; margin-bottom: 10px;">Sign up</p>
+<div class="d-flex flex-column">
+    <p class="info-text">Have an account? <a class="info-text" href="{% url 'login' %}">Log in</a></p>
+</div>
+{% endblock %}
+
+{% block inputs %}
+    <input placeholder="Username" type="text" name="username" id="username">
+    <input placeholder="First name (optional)" type="text" name="first_name" id="first_name">
+    <input placeholder="Email" type="email" name="email" id="email">
+    <input placeholder="Password" type="password" name="password" id="password">
+    <button class="w-100">Confirm</button>
+{% endblock %}
