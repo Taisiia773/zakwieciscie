@@ -6,6 +6,7 @@
 {% endblock %}
 
 {% block content %}
+<center>
     <form method="POST" class="d-flex align-items-center flex-column h-auto text-center">
         {% csrf_token %}
         
@@ -26,4 +27,5 @@
         {% endif %}
         
     </form>
+</center>
 {% endblock %}
